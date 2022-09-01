@@ -732,7 +732,7 @@ display: inline-block;
         grid-area: section3;
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: repeat(2, 46%);
+        grid-template-rows: repeat(2, 50%);
         grid-auto-flow: row; 
         border: 1px solid black;
         grid-template-areas: 
@@ -748,13 +748,11 @@ display: inline-block;
             display: flex;
             flex-direction: column;
         }
-            .subhead-sec3 {
+            .right3 h4 {
                 text-align: center;
                 border-bottom: 1px solid black;
             }
-            .subhead-p {
-
-            }
+            .right3 p
 
     .section4 {
             grid-area: section4;
