@@ -702,7 +702,7 @@ display: inline-block;
         grid-auto-flow: row; 
         row-gap: 2%;
         object-fit: contain;
-        margin-top: 2%;
+        margin: 2% 5% 0 5%;
         grid-template-areas: 
         "left2"
         "right2";
@@ -715,7 +715,7 @@ display: inline-block;
                         font-weight: lighter;
                         line-height: 1.5;
                         word-spacing: 0.06rem;
-
+                        padding: 0 0.31rem;
                     }
         .right2 {
             grid-area: right2;
@@ -735,17 +735,26 @@ display: inline-block;
         grid-template-rows: repeat(2, 46%);
         grid-auto-flow: row; 
         border: 1px solid black;
-        grid-area: 
+        grid-template-areas: 
         "left3"
         "right3";
     }
         .left3 {
-            display: flex;
+            grid-area: left3;
         }
-            .infocards {
-            }
+
         .right3 {
+            grid-area: right3;
+            display: flex;
+            flex-direction: column;
         }
+            .subhead-sec3 {
+                text-align: center;
+                border-bottom: 1px solid black;
+            }
+            .subhead-p {
+
+            }
 
     .section4 {
             grid-area: section4;
@@ -760,10 +769,16 @@ display: inline-block;
          }
     .left4 {
         grid-area: left4;
+        display: flex;
+        flex-direction: column;
+        padding: 0 0.4rem;
     }
     .right4 {
         grid-area:right4;
     }
+        #rightside4img {
+            display: inline-block;
+        }
 .section5 {
     display: grid;
     grid-template-columns: auto;
