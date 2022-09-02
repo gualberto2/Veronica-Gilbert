@@ -450,7 +450,6 @@ display: inline-block;
                         grid-template-columns: auto;
                         grid-template-rows: repeat(2, 46%);
                         grid-auto-flow: row; 
-                        border: 1px solid black;
                         grid-area: 
                         "left3"
                         "right3";
@@ -467,9 +466,7 @@ display: inline-block;
                             grid-area: section4;
                             display: grid;
                             grid-template-columns: auto;
-                            grid-template-rows: repeat(2, 50%);
-                            grid-auto-flow: row;
-                            border: 1px solid black;
+                            grid-template-rows: repeat(2, 50%); 
                             grid-template-areas:
                             "right4" 
                             "left4";
