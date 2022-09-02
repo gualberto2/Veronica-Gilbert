@@ -161,7 +161,6 @@ body,
     grid-auto-columns: 1fr; 
     grid-auto-rows: 1fr; 
      column-gap: 8%;
-     border: 1px solid black;
 }
         .left3 {
             display: flex;
@@ -179,7 +178,6 @@ body,
     grid-auto-flow: row; 
     grid-auto-columns: 1fr; 
     grid-auto-rows: 1fr; 
-    border: 1px solid black;
  }
             .leftdside4 {
 
@@ -196,7 +194,6 @@ body,
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     row-gap: 8%;  
-    border: 1px solid black;
 }
             .section5top {
 
@@ -485,7 +482,6 @@ display: inline-block;
                     grid-auto-columns: 1fr;
                     grid-auto-rows: 1fr;
                     row-gap: 8%;  
-                    border: 1px solid black;
                 }
                             .section5top {
                 
@@ -731,7 +727,6 @@ display: inline-block;
         grid-template-columns: auto;
         grid-template-rows: repeat(2, 50%);
         grid-auto-flow: row; 
-        border: 1px solid black;
         grid-template-areas: 
         "left3"
         "right3";
@@ -766,7 +761,6 @@ display: inline-block;
             grid-template-columns: auto;
             grid-template-rows: repeat(2, 50%);
             grid-auto-flow: row;
-            border: 1px solid black;
             grid-template-areas:
             "right4" 
             "left4";
@@ -786,30 +780,30 @@ display: inline-block;
 .section5 {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: repeat(2, 46%);
+    grid-template-rows: 10% auto;
     grid-auto-flow: row;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    row-gap: 8%;  
-    border: 1px solid black;
+    grid-template-areas:
+    "top5"
+    "bottom5";
 }
-            .section5top {
-
+            .top5 {
+                grid-area: top5;
             }
-                        .section5top h3 {
-                            text-align: center;
-                            margin-top: 2%;
-                        }
-            .section5bottom {   
+                .top5 h3 {
+                    text-align: center;
+                    margin-top: 2%;
+                }
+            .bottom5 {   
+                grid-area: bottom5;
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 flex-wrap: nowrap;
                 justify-content: space-around;
                 align-items: flex-start;
                 align-content: center;
                 align-self: center;
             }
-                        .section5bottom img {
+                        .bottom5 img {
                             margin: 0 auto;
                             display:block;  
                             object-fit: contain;
