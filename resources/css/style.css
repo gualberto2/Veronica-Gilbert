@@ -823,7 +823,7 @@ display: inline-block;
                 align-items: flex-start;
                 align-content: center;
                 align-self: center;
-                margin: 0;
+                margin-bottom: ;
                 padding: 3% 8%;
             }
                         .bottom5 img {
@@ -831,6 +831,10 @@ display: inline-block;
                             display:block;  
                             object-fit: contain;
                         }
+    .footer {
+        background-color: #d1c2d9;
+
+    }
 }
 
   
